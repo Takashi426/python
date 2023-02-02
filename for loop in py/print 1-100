@@ -1,0 +1,6 @@
+for num in range(1,100):
+ if num%2==0:
+        print("evevn no =",num);
+ if num%2!=0:
+        print("odd no is=",num);
+    
