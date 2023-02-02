@@ -1,0 +1,22 @@
+#additon program using functions in py
+def add(a,b):
+ print(a+b);
+def sub(a,b):
+ print(a-b);
+def mul(a,b):
+ print(a*b);
+print("calculater ");
+a=input("enter the frist number");
+a=int(a);
+print("frist numeer=",a);
+b=int(input("enter the secound number"));
+print("secound number=",b);
+c=input("+ ,-,*");
+if c == '+':
+    add(a,b);
+if c== '-':
+    print(a-b);
+if c == '*':
+    print(a*b);
+    
+ 
