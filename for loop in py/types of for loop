@@ -1,0 +1,30 @@
+languages = ['Swift', 'Python', 'Go', 'JavaScript']
+# access items of a list using for loop
+for c in languages:
+ print(languages);
+'''
+output:
+['Swift', 'Python', 'Go', 'JavaScript']
+['Swift', 'Python', 'Go', 'JavaScript']
+['Swift', 'Python', 'Go', 'JavaScript']
+['Swift', 'Python', 'Go', 'JavaScript']
+
+'''
+
+
+#secound method begins from here 
+
+
+
+languages = ['Swift', 'Python', 'Go', 'JavaScript']
+# access items of a list using for loop
+for c in languages:
+ print(c);
+ '''
+ output::
+ 
+ Swift
+Python
+Go
+JavaScript
+'''
