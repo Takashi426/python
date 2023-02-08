@@ -20,3 +20,20 @@ with open('good.txt','w') as file:
     
  
 #####to print data present in file we should frist open file in read mode
+##TO READ DATA FROM FILE
+file=open("cat.txt","w")
+file.writelines("i am going to school here is")
+file=open("cat.txt","r")
+print(file.readlines())
+
+###---->delete  a file 
+c=open("dog.txt","w")
+c.writelines("dog is going to die as soon as posssible here")
+c.close()
+import os 
+os.remove("dog.txt")
+##just to check a file
+if os.path.exists("dog.txt"):
+  os.remove("dog.txt")
+else:
+  print("The file does not exist")
