@@ -1,0 +1,86 @@
+"""
+#python dear 
+name=input("enter good name")
+print(name)
+age=input("enter the age of you")
+print(age)
+file=open("data of you.txt","w")
+file.write(age)
+
+## some more informaation in files starting path
+## can be see in cmp after running in vs code 
+f=open('data of you.txt',mode='r',buffering=10,encoding='utf-8')
+print("file name is",f.name)#give file name
+print("mode",f.mode)#give mode name
+print("mode",f.encoding)#
+print("is file closed",f.closed)#o/p=false
+f.close()
+print("is file closed",f.closed)#o/p=true
+
+##to check if it is readiable or writable
+f=open('data of you.txt',mode='r')
+print(f.readable())#o/p=True
+print(f.writable())#o/p=False
+f.close()
+
+##to check if file is present or not in a we use these 
+import os
+print(os.path.isfile("hello.txt"))#o/p=false
+print(os.path.isfile("data of you.txt"))#o/p=true
+##can add if condition also in this
+import os
+filename=input("enter the file name:")
+if os.path.isfile("filename"):
+  print(" if filr present these if condition satisfay")
+  f=open(filename)
+  #do some operations and 
+  f.close()
+else:
+    print("file not present")
+
+##in binarey mode no encoding is specied here store data in bytes mode but in othrer mode data is encoding and consider as string
+##in read syntax read(2) next time you do read(3) it will print from previous lent continue same as readline call frist time print frist line and secound time calling readline() it countinue from secound line in text file//to stop space==print(file,end="") 
+###
+f=open("data of you.txt","r")
+#print(list(f))##these will print enter data in list type
+for line in f:
+    print(line)##to take entair data line by line usinf for loop
+f.close()
+
+##?????????????????????/  tell()
+f=open("data of you.txt",'r')
+print(f.tell())#o/p=0 initially cursur position =0
+f.read(3)
+print(f.tell())#o/p=3 cursior position =3
+
+f.close()
+
+###seek()
+##seek method is used to change the position of file pointer
+f=open("data of you.txt",'r')
+print(f.tell())#0
+f.read(3)#3
+f.seek(0)#again cursior is switching from 3 to 0
+print(f.tell())
+f.close()
+"""
+###simple program in files  to read no of words,no of char,no of lines
+
+f=open('data of you.txt',mode='r')
+number_of_words=0
+number_of_chars=0
+number_of_lines=0
+
+for line in f:
+    number_of_lines+=1
+    line=line.strip("\n")#strip = remove \n
+    number_of_chars+=len(line)
+    list1=line.split()##split word and adding into list1
+    number_of_words+=len(list1)
+f.close()
+print("numbers of lines:",number_of_lines)
+print("numbers of words:",number_of_lines)
+print("numbers of characters:",number_of_chars)
+
+
+
