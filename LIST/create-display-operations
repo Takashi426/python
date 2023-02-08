@@ -1,0 +1,34 @@
+#list is here dear
+
+#notes
+"""
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+.
+
+azezur=["cat","dog","dog","rabbit"]
+print(len(azezur))
+azezur1=[1,2,3,4,5]
+azezur2=[True,False]
+print(azezur1)
+print(azezur2)
+"""
+#########
+azezur=["cat","dog","dog","rabbit"]
+azezur1=[1,2,3,4,5]
+print(len(azezur))
+
+print(azezur)
+azezur.sort()
+print(azezur)
+
+azezur.reverse()
+print(azezur)
+
+azezur1.sort(reverse=True)
+print(azezur1)
+
+azezur.sort(reverse=True)
+print(azezur)
