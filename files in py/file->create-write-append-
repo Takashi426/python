@@ -1,0 +1,21 @@
+#files in python
+
+file=open('good.txt','w')
+file.write("i am going to school\n")
+file.write("finally our hero is dead by gun shot\n ")
+file.close()
+
+#testing appppend mode
+file=open('good.txt','a')
+file.write("these will add at end ")
+file.close()
+
+"""
+another way to createa a file but it will erase all previous data in a same file and over write a new data here
+and close is no need to write because it is a automatic
+
+"""
+with open('good.txt','w') as file:
+    file.write("i am not going to school here//with\n")
+    
+ 
