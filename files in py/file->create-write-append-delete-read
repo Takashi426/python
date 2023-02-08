@@ -5,6 +5,12 @@ file.write("i am going to school\n")
 file.write("finally our hero is dead by gun shot\n ")
 file.close()
 
+##OTHER WAY TO WRITE DATA
+file=open('good.txt','w')
+L = ["This is Delhi \n","This is Paris \n","This is London \n"]
+file.writelines(L)
+file.close()
+
 #testing appppend mode
 file=open('good.txt','a')
 file.write("these will add at end ")
