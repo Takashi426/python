@@ -19,3 +19,4 @@ with open('good.txt','w') as file:
     file.write("i am not going to school here//with\n")
     
  
+#####to print data present in file we should frist open file in read mode
