@@ -84,3 +84,15 @@ print("numbers of characters:",number_of_chars)
 
 
 ##write file data in file one with write data will sent into file but if you use write syntax again ddata will overwrite previous data erase 
+############3
+##########3
+data ="i am not going to school here"
+f=open("secound.txt",'x')##x mode is usefull if file is present with file name it will show an error  
+f.writelines(data)
+f=open("secound.txt",'r')
+print(f.readlines())
+f.close()
+
+
+
+
