@@ -83,4 +83,4 @@ print("numbers of words:",number_of_lines)
 print("numbers of characters:",number_of_chars)
 
 
-
+##write file data in file one with write data will sent into file but if you use write syntax again ddata will overwrite previous data erase 
