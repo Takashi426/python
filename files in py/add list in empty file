@@ -1,0 +1,4 @@
+f1=open("secound.txt",'w')##opening empty file in read  mode 
+list=["cat","dog","rabbit"]#creatinf list 
+f1.writelines(list)#writing entair list into the empty file with the help of file pointer
+f1.close()#finally closing the file 
