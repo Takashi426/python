@@ -1,0 +1,10 @@
+
+f1=open("data of you.txt",'r')#ex:-data of you is a frist file data already present in it 
+f2=open("secound.txt",'w')#secound file ex:-secound.txt these file is empty have to copy data from file 1 to this file
+
+#print(list(f1))
+data=f1.readlines()#to store data present in the file one into data
+for line in data:#use for loop to write data into secound file 
+ f2.write(line)#
+#print(f2.readlines())#not printing here 
+#print(list(f2)) #not printing here
